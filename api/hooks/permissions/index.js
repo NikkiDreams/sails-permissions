@@ -7,8 +7,8 @@ var permissionPolicies = [
   'RolePolicy'
 ]
 import path from 'path'
-import _ from 'lodash'
-import Marlinspike from 'marlinspike'
+var _ = require('lodash');
+var Marlinspike = require('marlinspike')
 
 class Permissions extends Marlinspike {
   constructor (sails) {
