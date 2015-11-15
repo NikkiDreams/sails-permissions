@@ -97,7 +97,7 @@ class Permissions extends Marlinspike {
     return require(path.resolve(fixturesPath, 'model')).createModels()
       .then(models => {
         this.models = models
-        this.sails.hooks.permissions._modelCache = _.indexBy(models, 'identity')
+        this.sails.hooks["sails-permissions"]._modelCache = _.indexBy(models, 'identity')
 
         return require(path.resolve(fixturesPath, 'role')).create()
       })
