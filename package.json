@@ -1,41 +1,62 @@
 {
-  "name": "sails-permissions",
-  "version": "2.1.8",
-  "description": "Comprehensive user permissions and entitlements system for sails.js and Waterline. Supports user authentication with passport.js, role-based permissioning, object ownership, and row-level security.",
-  "main": "dist/api/hooks/permissions/index.js",
-  "scripts": {
-    "test": "gulp && mocha --reporter spec --compilers js:babel/register",
-    "prepublish": "gulp"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tjwebb/sails-permissions.git"
-  },
-  "keywords": [
-    "sails",
-    "sails.js",
-    "permissions",
-    "privileges",
-    "entitlements",
-    "access",
-    "restriction",
-    "passport",
-    "grant",
-    "roles",
-    "security",
-    "rbac",
-    "acl",
-    "enterprise",
-    "audit",
-    "trail",
-    "tracking"
+  "_args": [
+    [
+      "sails-permissions@~2.1.11",
+      "/www/5m/rest-api"
+    ]
   ],
-  "author": "Travis Webb <me@traviswebb.com>",
-  "license": "MIT",
+  "_from": "sails-permissions@>=2.1.11 <2.2.0",
+  "_id": "sails-permissions@2.1.11",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/sails-permissions",
+  "_nodeVersion": "4.2.2",
+  "_npmUser": {
+    "email": "me@traviswebb.com",
+    "name": "tjwebb"
+  },
+  "_npmVersion": "2.14.7",
+  "_phantomChildren": {
+    "gulp": "3.9.0"
+  },
+  "_requested": {
+    "name": "sails-permissions",
+    "raw": "sails-permissions@~2.1.11",
+    "rawSpec": "~2.1.11",
+    "scope": null,
+    "spec": ">=2.1.11 <2.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/sails-permissions/-/sails-permissions-2.1.11.tgz",
+  "_shasum": "a62edeaa5c2d92936c83a3bf90498c50344e750c",
+  "_shrinkwrap": null,
+  "_spec": "sails-permissions@~2.1.11",
+  "_where": "/www/5m/rest-api",
+  "author": {
+    "email": "me@traviswebb.com",
+    "name": "Travis Webb"
+  },
   "bugs": {
     "url": "https://github.com/tjwebb/sails-permissions/issues"
   },
-  "homepage": "https://github.com/tjwebb/sails-permissions",
+  "bundleDependencies": [
+    "fnv-plus",
+    "lodash",
+    "pluralize"
+  ],
+  "dependencies": {
+    "fnv-plus": "^1.2.10",
+    "lodash": "^3.10.0",
+    "marlinspike": "^1.0",
+    "pluralize": "^1.0.1",
+    "sails-auth": "^2.0",
+    "sails-generate-entities": "latest",
+    "waterline-criteria": "^0.11.1"
+  },
+  "description": "Comprehensive user permissions and entitlements system for sails.js and Waterline. Supports user authentication with passport.js, role-based permissioning, object ownership, and row-level security.",
   "devDependencies": {
     "babel": "^5.8.21",
     "gulp": "^3.9.0",
@@ -43,31 +64,75 @@
     "jshint": "^2.8.0",
     "mocha": "^2.x.x",
     "request": "^2.58.0",
-    "sails": "balderdashy/sails",
+    "sails": "github:balderdashy/sails",
     "sails-memory": "^0.10.5",
     "supertest": "^0.15.0",
     "waterline-postgresql": "^0.12.0"
   },
-  "dependencies": {
-    "fnv-plus": "^1.2.10",
-    "lodash": "^3.10.0",
-    "marlinspike": "^0.12",
-    "pluralize": "^1.0.1",
-    "sails-auth": "^2.0",
-    "sails-generate-entities": "latest",
-    "waterline-criteria": "^0.11.1"
+  "directories": {},
+  "dist": {
+    "shasum": "a62edeaa5c2d92936c83a3bf90498c50344e750c",
+    "tarball": "http://registry.npmjs.org/sails-permissions/-/sails-permissions-2.1.11.tgz"
   },
-  "bundledDependencies": [
-    "fnv-plus",
-    "lodash",
-    "pluralize"
-  ],
   "engines": {
     "node": ">= 0.10",
     "npm": ">= 2.3"
   },
+  "gitHead": "f2d174b1283a4f07aabe4702ca7a3d416701101e",
+  "homepage": "https://github.com/tjwebb/sails-permissions",
+  "keywords": [
+    "access",
+    "acl",
+    "audit",
+    "enterprise",
+    "entitlements",
+    "grant",
+    "passport",
+    "permissions",
+    "privileges",
+    "rbac",
+    "restriction",
+    "roles",
+    "sails",
+    "sails.js",
+    "security",
+    "tracking",
+    "trail"
+  ],
+  "license": "MIT",
+  "main": "dist/api/hooks/permissions/index.js",
+  "maintainers": [
+    {
+      "name": "balderdash",
+      "email": "hello@balderdash.io"
+    },
+    {
+      "name": "ryanwilliamquinn",
+      "email": "ryanwilliamquinn@gmail.com"
+    },
+    {
+      "name": "sailsjs",
+      "email": "sailsjs@balderdash.io"
+    },
+    {
+      "name": "tjwebb",
+      "email": "me@traviswebb.com"
+    }
+  ],
+  "name": "sails-permissions",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjwebb/sails-permissions.git"
+  },
   "sails": {
-    "isHook": true,
-    "hookName": "permissions"
-  }
+    "hookName": "permissions",
+    "isHook": true
+  },
+  "scripts": {
+    "prepublish": "gulp",
+    "test": "gulp && mocha --reporter spec --compilers js:babel/register"
+  },
+  "version": "2.1.11"
 }
